@@ -1,0 +1,30 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(12, 12, 12);
+}
+
+
+.notes{
+  display: flex;
+  gap: 1rem;
+  padding-block: 1rem;
+  padding-inline: 3rem;
+  flex-wrap: wrap;
+  background-color: rgb(62, 27, 1);
+}
+
+.note{
+  background-color: #3f3f3f;
+  padding: 1rem;
+  border-radius: 0.7rem;
+  max-width: 20rem;
+  color:beige;
+}
