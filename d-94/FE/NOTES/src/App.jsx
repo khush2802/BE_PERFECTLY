@@ -10,7 +10,7 @@ const App = () => {
     e.preventDefault();
     const {title, description} = e.target.elements;
 
-    axios.post("http://localhost:3000/api/notes",{
+    axios.post("https://be-perfectly.onrender.com/api/notes",{
       title:title.value,
       description:description.value
     }).then((res)=>{
@@ -21,7 +21,7 @@ const App = () => {
 
 
   function handleDelete(id){
-    axios.delete("http://localhost:3000/api/notes/"+id)
+    axios.delete("https://be-perfectly.onrender.com/api/notes/"+id)
     .then((res)=>{
       console.log(res.data);
       getapi();
@@ -29,7 +29,7 @@ const App = () => {
   }
 
   function getapi(){
-    axios.get("http://localhost:3000/api/notes")
+    axios.get("https://be-perfectly.onrender.com/api/notes")
     .then((res)=>{
       setNotes(res.data.notes);
     });
