@@ -13,10 +13,11 @@ async function cpostController(req,res){
      console.log(req.file);
 
 
-const file = await client.files.upload({
+     const file = await client.files.upload({
      file: await toFile(Buffer.from(req.file.buffer),"file"),
-     fileName:"b"})
+     fileName:"b"});
      res.send(file);
+     
      
 }
 
